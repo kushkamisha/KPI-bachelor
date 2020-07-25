@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Text area</title>
+</head>
+<script>
+    function property_obj(obj) {
+        var result = '';
+        for (var i in obj) {
+            result += obj.data.value + "." + i + " = " + (obj.data)[i]+ "\r\n";
+        }
+        result += "\n\r"
+        properties.data.value = result;
+    }
+</script>
+<body>
+    <form name='properties'>
+        <input type='button' value='Process' onclick='property_obj(properties)'><hr>
+        <textarea name='data' cols=80 rows=20 id=1>Text</textarea><hr>
+        <input type='reset'>
+    </form>
+</body>
+</html>

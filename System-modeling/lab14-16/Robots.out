@@ -1,0 +1,78 @@
+
+                                      ARENA Simulation Results
+                                     tetsuya - License: STUDENT
+
+                                  Summary for Replication 1 of 1
+
+Project: Robots                                                      Run execution date :12/20/2019
+Analyst: tetsuya                                                     Model revision date:12/20/2019
+
+Replication ended at time      : 3600.0 Seconds 
+Base Time Units: Seconds
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+detail.VATime                               345.02     (Insuf)    218.65     687.39         63    
+detail.NVATime                              .00000     (Insuf)    .00000     .00000         63    
+detail.WaitTime                             343.90     (Insuf)    .00000     769.02         63    
+detail.TranTime                             .00000     (Insuf)    .00000     .00000         63    
+detail.OtherTime                            .00000     (Insuf)    .00000     .00000         63    
+detail.TotalTime                            688.93     (Insuf)    285.42     1172.0         63    
+Robot 2 moving a detail.Queue.WaitingTime   4.0872     (Insuf)    .00000     26.852         65    
+Robot 3 moving a detail.Queue.WaitingTime   8.2594     (Insuf)    .00000     50.676         64    
+Robot 1 moving a detail.Queue.WaitingTime   11.794     (Insuf)    .00000     48.150         89    
+Processing by #1.Queue.WaitingTime          332.82     (Insuf)    .00000     724.29         68    
+Processing by #2.Queue.WaitingTime          14.372     (Insuf)    .00000     99.945         64    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+detail.WIP                                  15.396     (Insuf)    .00000     30.000     26.000    
+processor 1.NumberBusy                      2.9636     (Insuf)    .00000     3.0000     3.0000    
+processor 1.NumberScheduled                 3.0000     (Insuf)    3.0000     3.0000     3.0000    
+processor 1.Utilization                     .98790     (Insuf)    .00000     1.0000     1.0000    
+processor 2.NumberBusy                      2.0803     (Insuf)    .00000     3.0000     .00000    
+processor 2.NumberScheduled                 3.0000     (Insuf)    3.0000     3.0000     3.0000    
+processor 2.Utilization                     .69346     (Insuf)    .00000     1.0000     .00000    
+robot 3.NumberBusy                          .37327     (Insuf)    .00000     1.0000     1.0000    
+robot 3.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+robot 3.Utilization                         .37327     (Insuf)    .00000     1.0000     1.0000    
+robot 2.NumberBusy                          .41011     (Insuf)    .00000     1.0000     1.0000    
+robot 2.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+robot 2.Utilization                         .41011     (Insuf)    .00000     1.0000     1.0000    
+robot 1.NumberBusy                          .54646     (Insuf)    .00000     1.0000     .00000    
+robot 1.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+robot 1.Utilization                         .54646     (Insuf)    .00000     1.0000     .00000    
+Robot 2 moving a detail.Queue.NumberInQueu  .07380     (Insuf)    .00000     2.0000     .00000    
+Robot 3 moving a detail.Queue.NumberInQueu  .14684     (Insuf)    .00000     3.0000     .00000    
+Robot 1 moving a detail.Queue.NumberInQueu  .29158     (Insuf)    .00000     3.0000     .00000    
+Processing by #1.Queue.NumberInQueue        8.2552     (Insuf)    .00000     22.000     21.000    
+Processing by #2.Queue.NumberInQueue        .25551     (Insuf)    .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+detail.NumberIn                             89.000    
+detail.NumberOut                            63.000    
+processor 1.NumberSeized                    68.000    
+processor 1.ScheduledUtilization            .98790    
+processor 2.NumberSeized                    64.000    
+processor 2.ScheduledUtilization            .69346    
+robot 3.NumberSeized                        64.000    
+robot 3.ScheduledUtilization                .37327    
+robot 2.NumberSeized                        65.000    
+robot 2.ScheduledUtilization                .41011    
+robot 1.NumberSeized                        89.000    
+robot 1.ScheduledUtilization                .54646    
+System.NumberOut                            63.000    
+
+
+Simulation run time: 0.00 minutes.
+Simulation run complete.

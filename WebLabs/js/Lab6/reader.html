@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Questionnaire</title>
+</head>
+<script>
+    var s = 'You like: \r\n';
+    function set(info) {
+        s += info + '\r\n';
+        document.form2.area.value = s;
+    }
+</script>
+<body bgcolor='F8F8FF'>
+    <center>
+        <p>Questionnaire</p>
+        <form name='form1'>
+            <h4>Enter the name of your favourite magazine.</h4>
+            <input type='text' name='magazine' size=45><br>
+        </form>
+        <form name='form2'>
+            <h4>What do you like in this magazine?</h4>
+            <table border=3>
+                <tr>
+                    <td>
+                        <input type='checkbox' name='chk1' value='Style of submission' onclick='set(form2.elements[0].value)'> Style of submission<br>
+                        <input type='checkbox' name='chk1' value='Reliability of information' onclick='set(form2.elements[1].value)'> Reliability of information<br>
+                        <input type='checkbox' name='chk1' value='Design and decoration' onclick='set(form2.elements[2].value)'> Design and decoration<br>
+                    </td>
+                </tr>
+            </table>
+            <textarea name='area' cols=35 rows=7></textarea><br>
+            <input type='reset'>
+        </form>
+    </center>
+</body>
+</html>

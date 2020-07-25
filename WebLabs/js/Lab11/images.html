@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Images</title>
+</head>
+<script>
+    var img_array = ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg'];
+    var i = 0;
+    
+    function s() {
+        document.images[0].src = img_array[i];
+        
+        i += 1;
+        if (i == 3) {
+            i = 0;
+        }
+    }
+</script>
+<body>
+    <img src='img/img1.jpg'><br>
+    <input type='button' name='show_me' value='Watch' onclick='setInterval("s()", 100)'>
+</body>
+</html>

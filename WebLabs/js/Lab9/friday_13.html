@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Friday 13</title>
+</head>
+<script>
+    function def13(obj){
+        var t = new Date();
+        var c = '';
+        var y = Number(obj.year.value);
+        for (var i = 0; i <= 11; i++) {
+            t.setYear(y);
+            t.setMonth(i);
+            t.setDate(13);
+            if (t.getDay() == 5) {
+            c = c + fmon(i) + "\r\n"; 
+            }
+        }
+        obj.result.value = c;
+    }
+    
+    function fmon(mont){
+        var s;
+        switch (mont) {
+            case 0: s = "january";
+            break;
+            case 1: s = "february";
+            break;
+            case 2: s = "march";
+            break;
+            case 3: s = "april";
+            break;
+            case 4: s = "may";
+            break;
+            case 5: s = "june";
+            break;
+            case 6: s = "july";
+            break;
+            case 7: s = "august";
+            break;
+            case 8: s = "september";
+            break;
+            case 9: s = "october";
+            break;
+            case 10: s = "november";
+            break;
+            case 11: s = "december";
+            break;
+        }
+        return s;
+    }
+</script>
+<body>
+    <form name='form1'>
+        Enter year <input type='text' size=8 name='year'><br>
+        <input type='button' value='Find' onclick='def13(form1)'><br>
+        <textarea cols=30 rows=10 name='result'></textarea><br>
+        <input type='reset'>
+    </form>
+</body>
+</html>

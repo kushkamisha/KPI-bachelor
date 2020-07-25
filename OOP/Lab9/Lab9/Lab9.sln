@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixDll", "MatrixDll\MatrixDll.vcxproj", "{1679DAE2-AAC2-4508-BA6B-4EC6BB222837}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixExec", "MatrixExec\MatrixExec.vcxproj", "{5FD68EE5-05A7-43BD-B002-CBF5091E32AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1679DAE2-AAC2-4508-BA6B-4EC6BB222837}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1679DAE2-AAC2-4508-BA6B-4EC6BB222837}.Debug|Win32.Build.0 = Debug|Win32
+		{1679DAE2-AAC2-4508-BA6B-4EC6BB222837}.Release|Win32.ActiveCfg = Release|Win32
+		{1679DAE2-AAC2-4508-BA6B-4EC6BB222837}.Release|Win32.Build.0 = Release|Win32
+		{5FD68EE5-05A7-43BD-B002-CBF5091E32AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5FD68EE5-05A7-43BD-B002-CBF5091E32AC}.Debug|Win32.Build.0 = Debug|Win32
+		{5FD68EE5-05A7-43BD-B002-CBF5091E32AC}.Release|Win32.ActiveCfg = Release|Win32
+		{5FD68EE5-05A7-43BD-B002-CBF5091E32AC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

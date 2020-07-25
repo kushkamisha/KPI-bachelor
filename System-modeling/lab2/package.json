@@ -1,0 +1,24 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushkamisha/System-modeling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kushkamisha/System-modeling/issues"
+  },
+  "homepage": "https://github.com/kushkamisha/System-modeling#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
+}

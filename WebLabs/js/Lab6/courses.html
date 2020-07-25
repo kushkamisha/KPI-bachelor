@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Courses</title>
+</head>
+<style>
+    #my_form {
+        margin-left: 40%;
+    }
+    
+    #my_form input[type=button] {
+        margin-left: 120px;
+    }
+</style>
+<body>
+    <h2 align='center'>Courses selector</h2>
+    <form name='courses' id='my_form'>
+        Please set courses which you want to complete<br>
+        <input type='checkbox' name='course1' onclick='show_me(1)' value=300> Machine Learning with Python<br>
+        <div name='course_features1' style='display: none;'>
+            How fast do you want to complete this course?<br>
+            <input type='radio' name='duration1' value=100> 3 weeks<br>
+            <input type='radio' name='duration1' value=70> 4 weeks<br>
+            <input type='radio' name='duration1' value=0 checked> 8 weeks<br>
+            In what language do you want to take the course?<br>
+            <input type='radio' name='language1' value=0 checked> English<br>
+            <input type='radio' name='language1' value=100> French<br>
+            <input type='radio' name='language1' value=100> Ukrainian<br>
+            In what form do you want to take the course?<br>
+            <input type='radio' name='course_form1' value=0 checked> Online<br>
+            <input type='radio' name='course_form1' value=300> In class<hr width=350 align='left'>
+            
+            <div id='price1'></div>
+            <div id='total_price1'></div>
+            <input type='button' value='Calculate' onclick='calculate_price(1)'>
+        </div><hr width=350 align='left'><hr width=350 align='left'>
+        
+        <input type='checkbox' name='course2' onclick='show_me(2)' value=150> Scikit-learn for Machine Learning<br>
+        <div name='course_features2' style='display: none;'>
+            How fast do you want to complete this course?<br>
+            <input type='radio' name='duration2' value=100> 3 weeks<br>
+            <input type='radio' name='duration2' value=70> 4 weeks<br>
+            <input type='radio' name='duration2' value=0 checked> 8 weeks<br>
+            In what language do you want to take the course?<br>
+            <input type='radio' name='language2' value=0 checked> English<br>
+            <input type='radio' name='language2' value=100> French<br>
+            <input type='radio' name='language2' value=100> Ukrainian<br>
+            In what form do you want to take the course?<br>
+            <input type='radio' name='course_form2' value=0 checked> Online<br>
+            <input type='radio' name='course_form2' value=300> In class<hr width=350 align='left'>
+            
+            <div id='price2'></div>
+            <div id='total_price2'></div>
+            <input type='button' value='Calculate' onclick='calculate_price(2)'>
+        </div><hr width=350 align='left'><hr width=350 align='left'>
+        
+        <input type='checkbox' name='course3' onclick='show_me(3)' value=500> Deep learning<br>
+        <div name='course_features3' style='display: none;'>
+            How fast do you want to complete this course?<br>
+            <input type='radio' name='duration3' value=100> 3 weeks<br>
+            <input type='radio' name='duration3' value=70> 4 weeks<br>
+            <input type='radio' name='duration3' value=0 checked> 8 weeks<br>
+            In what language do you want to take the course?<br>
+            <input type='radio' name='language3' value=0 checked> English<br>
+            <input type='radio' name='language3' value=100> French<br>
+            <input type='radio' name='language3' value=100> Ukrainian<br>
+            In what form do you want to take the course?<br>
+            <input type='radio' name='course_form3' value=0 checked> Online<br>
+            <input type='radio' name='course_form3' value=300> In class<hr width=350 align='left'>
+            
+            <div id='price3'></div>
+            <div id='total_price3'></div>
+            <input type='button' value='Calculate' onclick='calculate_price(3)'>
+        </div>
+        <input type='reset' onclick='total_price=0;'>
+    </form>
+</body>
+<script>
+    var total_price = 0;
+    
+    function calculate_price(n) {
+        var current_price = 0;
+        
+        if (document.getElementsByName('duration' + n)[0].checked) {
+            current_price += Number(document.getElementsByName('duration' + n)[0].value);
+        } else if (document.getElementsByName('duration' + n)[1].checked) {
+            current_price += Number(document.getElementsByName('duration' + n)[1].value);
+        } else if (document.getElementsByName('duration' + n)[2].checked) {
+            current_price += Number(document.getElementsByName('duration' + n)[2].value);
+        }
+        
+        if (document.getElementsByName('language' + n)[0].checked) {
+            current_price += Number(document.getElementsByName('language' + n)[0].value);
+        } else if (document.getElementsByName('language' + n)[1].checked) {
+            current_price += Number(document.getElementsByName('language' + n)[1].value);
+        } else if (document.getElementsByName('language' + n)[2].checked) {
+            current_price += Number(document.getElementsByName('language' + n)[2].value);
+        }
+        
+        if (document.getElementsByName('course_form' + n)[0].checked) {
+            current_price += Number(document.getElementsByName('course_form' + n)[0].value);
+        } else if (document.getElementsByName('course_form' + n)[1].checked) {
+            current_price += Number(document.getElementsByName('course_form' + n)[1].value);
+        }
+        
+        total_price += current_price;
+        
+        document.getElementById('price' + n).innerHTML = 'Your current price is ' + current_price;
+        document.getElementById('total_price' + n).innerHTML = 'Your total price is ' + total_price;
+    }
+    
+    function show_me(n) {
+        if (document.getElementsByName('course' + n)[0].checked) {
+            document.getElementsByName('course_features' + n)[0].style.display = 'block';
+        } else {
+            document.getElementsByName('course_features' + n)[0].style.display = 'none';
+        }
+    }
+</script>
+</html>

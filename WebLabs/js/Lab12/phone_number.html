@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Phone number</title>
+</head>
+<script>
+    function check_phone_number() {
+        var phone = user_input.phone_number.value;
+        var correct_values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "/", "-", " "];
+        var phone_array = phone.split('');
+        var counter = 0;
+        var n = phone_array.length;
+        var clear_phone = [];
+        var j = 0;
+        
+        for (var i = 0; i < n; i++) {
+            if (correct_values.includes(phone_array[i])) {
+                if (phone_array[i] != '/' && phone_array[i] != '-' && phone_array[i] != ' ') {
+                    clear_phone[j] = phone_array[i];
+                    j++;
+                }
+                counter++;
+            }
+        }
+        alert(clear_phone);
+        if (counter == n) {
+            if (clear_phone.length != 10) {
+                alert('Phone number must contain 10 digits!');
+            } else {
+                alert('Phone number is correct.');
+            }
+        } else {
+            alert('Incorrect characters in the phone number!');
+        }
+    }
+</script>
+<body>
+    <form name='user_input'>
+        Enter your phone number: <input type='text' name='phone_number'><br>
+        <input type='button' value='Check' onclick='check_phone_number()'>
+    </form>
+</body>
+</html>

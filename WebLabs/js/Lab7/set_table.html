@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Set table</title>
+</head>
+<style>
+    #my_table {
+        width: 500px;
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+</style>
+<script>
+    var cell = 1;
+
+    function change_color(color) {
+        document.getElementById('my_table').style.backgroundColor = color;
+        document.getElementById('my_table').style.backgroundImage = 'url()';
+    }
+    
+    function change_image(image) {
+        document.getElementById('my_table').style.backgroundImage = image;
+        document.getElementById('my_table').style.backgroundColor = '';
+    }
+    
+    function use_both(is_checked, color, image) {
+        if (is_checked) {
+            document.getElementById('my_table').style.backgroundColor = color;
+            document.getElementById('my_table').style.backgroundImage = image;
+        } else {
+            document.getElementById('my_table').style.backgroundColor = '';
+            document.getElementById('my_table').style.backgroundImage = 'url()';
+        }
+    }
+    
+    function cell_change_color() {
+        var my_cell = set_table.cell_no.value;
+        var my_color = set_table.color_no.value;
+        
+        my_cell -= 1;
+        if (my_cell < 2) {
+            document.getElementById('my_table').rows[0].cells[my_cell].style.backgroundColor = my_color;
+        } else {
+            my_cell -= 2;
+            document.getElementById('my_table').rows[1].cells[my_cell].style.backgroundColor = my_color;
+        }
+    }
+</script>
+<body>
+    <h3>Table</h3>
+    <table id='my_table' border=1>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <form name='set_table'>
+        <p>Select table's background color</p>
+        <select name='color' onchange='change_color(set_table.color.value)'>
+            <option value='silver'>Silver</option>
+            <option value='red'>Red</option>
+            <option value='pink'>Pink</option>
+            <option value='green'>Green</option>
+            <option value='yellow'>Yellow</option>
+        </select>
+        <p>Select background image</p>
+        <select name='image' onchange='change_image(set_table.image.value)'>
+            <option value='url("img/img1.jpg")'>Image1</option>
+            <option value='url("img/img2.jpg")'>Image2</option>
+            <option value='url("img/img3.jpg")'>Image3</option>
+        </select>
+        <p><input type='checkbox' name='both' onclick='use_both(set_table.both.checked, set_table.color.value, set_table.image.value)'> use both: color and image</p>
+        
+        
+        <p>Select background color for every cell</p>
+        <table border=3 cellpadding=5 cellspacing=6 bgcolor=silver>
+            <tr>
+                <th>Cell No.</th>
+                <th>Color</th>
+            </tr>
+            <tr>
+                <td>
+                    <select size=4 name='cell_no' onchange='cell=set_table.cell_no.value'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                    </select>
+                </td>
+                <td>
+                    <select size=5 name='color_no' onchange='cell_change_color()'>
+                        <option value='silver'>Silver</option>
+                        <option value='red'>Red</option>
+                        <option value='pink'>Pink</option>
+                        <option value='green'>Green</option>
+                        <option value='yellow'>Yellow</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

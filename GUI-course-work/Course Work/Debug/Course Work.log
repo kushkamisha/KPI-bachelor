@@ -1,0 +1,5 @@
+﻿  MyForm.cpp
+MyForm.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Dichotomy.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Course Work.vcxproj -> C:\Users\Mike\Documents\Visual Studio 2015\Projects\Course Work\Debug\Course Work.exe
+  Course Work.vcxproj -> C:\Users\Mike\Documents\Visual Studio 2015\Projects\Course Work\Debug\Course Work.pdb (Partial PDB)

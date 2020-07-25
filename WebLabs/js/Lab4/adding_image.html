@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Adding image.</title>
+</head>
+<script>
+    function add_image(obj) {
+        var number = Number(obj.n_image.value);
+        if (number < 1 || number > 3) {
+            alert('Incorrect image number!');
+        } else {
+            document.getElementById('new_image').innerHTML = "<img src='img/img"
+                + number + ".jpg' width='200' name='image1' alt='image 1'><br>";
+        }
+    }
+</script>
+<body>
+    <p>My images.</p>
+    <img src='img/img1.jpg' width='200' name='image1' alt='image 1'>
+    <img src='img/img2.jpg' width='200' name='image2' alt='image 2'>
+    <img src='img/img3.jpg' width='200' name='image3' alt='image 3'><br>
+    <div id='new_image'></div>
+    
+    <form name='add'>
+        <p>Input number of image to add.</p>
+        <input type='text' name='n_image' size=1><br>
+        <input type='button' value='Add' onclick='add_image(add)'>
+    </form>
+</body>
+</html>

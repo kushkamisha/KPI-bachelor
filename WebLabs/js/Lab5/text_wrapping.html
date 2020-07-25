@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Text wrapping.</title>
+</head>
+<script>
+    function change(obj) {
+        if (obj.elements[0].checked) {
+            document.my_picture.align = "left";
+        } else {
+            document.my_picture.align = "right";
+        }
+    }
+    
+    function reset_() {
+        document.my_picture.align = "left";
+    }
+</script>
+<body>
+    <p>Image text wrapping.</p>
+    <form name='wrapping'>
+        Choose wrapping parameter.<br>
+        <pre>
+            <input type='radio' name='wrap' checked value=l> Left alignment
+            <input type='radio' name='wrap' value=r> Right alignment
+        </pre>
+        <input type='button' value='See changes' onclick='change(wrapping)'>
+        <input type='reset' onclick='reset_()'>
+    </form>
+    
+    <table bgcolor='F8F8FF'>
+        <tr>
+            <td>
+                Lorem Ipsum не є випадковим набором літер. Він походить з уривку
+                класичної латинської літератури 45 року до н.е., тобто має більш як 2000-річну історію.
+                Річард Макклінток, професор латини з коледжу Хемпдін-Сидні, що у Вірджінії, вивчав одне з
+                найменш зрозумілих латинських слів - consectetur - з уривку Lorem Ipsum, і у пошуку цього слова
+                в класичній літературі знайшов безсумнівне джерело.
+                <img src='img/img1.jpg' name='my_picture' align=left border=3 width=300>
+                Lorem Ipsum походить з розділів 1.10.32 та 1.10.33 цицеронівського "de Finibus Bonorum et Malorum"
+                ("Про межі добра і зла"), написаного у 45 році до н.е. Цей трактат з теорії етики був дуже
+                популярним в епоху Відродження. Перший рядок Lorem Ipsum, "Lorem ipsum dolor sit amet..." 
+                походить з одного з рядків розділу 1.10.32.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

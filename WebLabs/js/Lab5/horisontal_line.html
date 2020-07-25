@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Horisontal line.</title>
+</head>
+<script>
+    function set_width(obj) {
+        if (obj.elements[0].checked) {
+            document.getElementById('my_line').width = obj.elements[0].value;
+        } else if (obj.elements[1].checked) {
+            document.getElementById('my_line').width = obj.elements[1].value;
+        } else if (obj.elements[2].checked) {
+            document.getElementById('my_line').width = obj.elements[2].value;
+        } else if (obj.elements[3].checked) {
+            document.getElementById('my_line').width = obj.elements[3].value;
+        }
+    }
+    
+    function set_position(obj) {
+        if (obj.elements[0].checked) {
+            document.getElementById('my_line').align = 'left';
+        } else if (obj.elements[1].checked) {
+            document.getElementById('my_line').align = 'center';
+        } else if (obj.elements[2].checked) {
+            document.getElementById('my_line').align = 'right';
+        }
+    }
+</script>
+<body>
+    <p>Set parameters for the horisontal line.</p>
+    <form name='line_width'>
+        Line width:<br>
+        <input type='radio' name='param' value=300> 300<br>
+        <input type='radio' name='param' value=500> 500<br>
+        <input type='radio' name='param' value=800> 800<br>
+        <input type='radio' name='param' value=1200> 1200<br>
+        <input type='button' value='Set' onclick='set_width(line_width)'>
+    </form>
+    <form name='line_position'>
+        <br>Line position:<br>
+        <input type='radio' name='param' value=l> Left<br>
+        <input type='radio' name='param' value=c> Center<br>
+        <input type='radio' name='param' value=r> Right<br>
+        <input type='button' value='Set' onclick='set_position(line_position)'>
+    </form>
+    
+    <hr id='my_line'>
+</body>
+</html>

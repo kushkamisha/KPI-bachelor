@@ -1,0 +1,6 @@
+# MacOS files
+.DS_Store
+
+# Word history of files
+~$*.docx
+~$*.doc

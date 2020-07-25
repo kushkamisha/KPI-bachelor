@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Word repeating</title>
+</head>
+<script>
+    function calculate() {
+        var str = repeating.my_string.value;
+        var word = repeating.word.value;
+        
+        var arr = str.split(' ');
+        var counter = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == word) {
+                counter++;
+            }
+        }
+        
+        repeating.result.value = counter;
+    }
+</script>
+<body>
+    <form name='repeating'>
+        <p>How many times word is in text?</p>
+        Enter string <input type='text' name='my_string'><br>
+        Searching word <input type='text' name='word'><br>
+        <input type='button' value='Wanna know' onclick='calculate()'><br>
+        <input type='text' name='result'>
+    </form>
+</body>
+</html>

@@ -1,0 +1,2 @@
+y(min) = 0.00 at x(min) = 1.00
+y(max) = 0.99 at x(min) = 2.00

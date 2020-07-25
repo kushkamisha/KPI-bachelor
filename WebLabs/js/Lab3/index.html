@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>JS if...else blocks</title>
+    <script>
+        function maxval(obj) {
+            var num1 = Number(obj.number1.value);
+            var num2 = Number(obj.number2.value);
+            var num3 = Number(obj.number3.value);
+            
+            var max_val = num1;
+            if (num2 > max_val)
+                max_val = num2;
+            if (num3 > max_val)
+                max_val = num3;
+                
+            obj.result.value = max_val;
+        }
+        
+        function maxval1(obj) {
+            var num1 = Number(obj.number1.value);
+            var num2 = Number(obj.number2.value);
+            var num3 = Number(obj.number3.value);
+            
+            obj.result.value = Math.max(Math.max(num1, num2), num3);
+        }
+        
+        function findmax(arr) {
+            var maxval = arr[0];
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] > maxval)
+                    maxval = arr[i];
+            }
+            
+            return maxval;
+        }
+        
+        function num_of_maxval(maxval, arr) {
+            var counter = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == maxval)
+                    counter++;
+            }
+
+            return counter;
+        }
+        
+        function max_5(obj) {
+            var numbers = obj.numbers.value.split(' ');
+            for (var i = 0; i < numbers.length; i++) {
+                numbers[i] = Number(numbers[i]);
+                if (isNaN(numbers[i]))
+                    numbers[i] = 0;
+            }
+            alert(numbers);
+            
+            var maxval = findmax(numbers);
+            obj.result.value = num_of_maxval(maxval, numbers);
+        }
+        
+        function build_triangle(obj) {
+            var a = Number(obj.side1.value);
+            var b = Number(obj.side2.value);
+            var c = Number(obj.side3.value);
+            
+            var can = false;
+
+            if ((a + b > c) && (b + c > c) && (c + a > b)) {
+                can = true;
+            }
+
+            if (can) {
+                document.getElementById('can_draw').innerHTML = 'YES';
+            } else {
+                document.getElementById('can_draw').innerHTML = 'NO';
+            }
+        }
+        
+        function what_quarter(obj) {
+            var X = Number(obj.X.value);
+            var y = Number(obj.y.value);
+            
+            var quarter;
+            
+            if (X < 0) {
+                if (y < 0)
+                    quarter = 3;
+                else
+                    quarter = 2;
+            } else {
+                if (y < 0)
+                    quarter = 4;
+                else
+                    quarter = 1;
+            }
+            
+            obj.answer.value = quarter;
+        }
+    </script>
+</head>
+<body>
+    <p>Determine the max value.</p>
+    <form name='max_value'>
+        Number1: <input type='text' name='number1'><br>
+        Number2: <input type='text' name='number2'><br>
+        Number3: <input type='text' name='number3'><br>
+        Max value: <input type='text' name='result'><br>
+        <input type='button' value='Determine' onclick='maxval1(max_value)'><br>
+        <input type='reset'>
+    </form>
+    
+    <p>Max value of 5 numbers.</p>
+    <form name='max_five'>
+        Enter five numbers separated with space: <input type='text' name='numbers'><br>
+        Max value: <input type='text' name='result'><br>
+        <input type='button' value='Determine' onclick='max_5(max_five)'><br>
+        <input type='reset'>
+    </form>
+    
+    <p>Make a triangle.</p>
+    <form name='triangle'>
+        First side: <input type='text' name='side1'><br>
+        Second side: <input type='text' name='side2'><br>
+        Third side: <input type='text' name='side3'><br>
+        Can draw the triangle: <span id='can_draw'></span><br>
+        <input type='button' value='Determine' onclick='build_triangle(triangle)'><br>
+        <input type='reset'>
+    </form>
+    
+    <p>In what quarter?</p>
+    <form name='dot'>
+        X: <input type='text' name='X'><br>
+        Y: <input type='text' name='y'><br>
+        Quarter: <input type='text' name='answer'><br>
+        <input type='button' value='Determine' onclick='what_quarter(dot)'><br>
+        <input type='reset'>
+    </form>
+</body>
+</html>

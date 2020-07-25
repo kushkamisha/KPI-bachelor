@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Online Shop</title>
+</head>
+<script>
+    var sum = 0;
+    function calc() {
+        // var item=shop.items.value;
+        var price = shop.prices.value;
+        var n_items = shop.no_items.value;
+        
+        sum += price * n_items;
+    }
+    
+    function get_price() {
+        shop.price.value = sum;
+    }
+</script>
+<body>
+    <form name='shop' align=center>
+        <table border=3 align=center cellpadding=5 cellspacing=6 bgcolor=silver>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>No. items</th>
+            </tr>
+            <tr>
+                <td>
+                    <select size=4 name='items'>
+                        <option value='magazine'>Meat</option>
+                        <option value='beer'>Beer</option>
+                        <option value='wine'>Wine</option>
+                        <option value='drugs'>Drugs</option>
+                    </select>
+                </td>
+                <td>
+                    <select size=5 name='prices'>
+                    <option value='5'>5$</option>
+                    <option value='10'>10$</option>
+                    <option value='15'>15$</option>
+                    <option value='20'>20$</option>
+                    <option value='50'>50$</option>
+                </select>
+                </td>
+                <td>
+                    <select size=5 name='no_items' onchange='calc()'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        Shopping price:
+        <input type='text' name='price' size=5><br>
+        <input type='button' value='Result' onclick='get_price()'><br>
+        <input type='reset' onclick='sum=0'>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#text {
+    color: blue;
+    font-size: 50px;
+}
+
+#mytable {
+    width: 100%;
+    border-collapse: collapse;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+table, td, th {
+    border: 2px solid black;
+}
+
+tr, td {
+    width: auto;
+    height: 20px;
+}

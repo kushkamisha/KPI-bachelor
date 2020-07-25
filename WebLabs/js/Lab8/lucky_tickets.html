@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Lucky tickets</title>
+</head>
+<body>
+    <textarea id='lucky' cols=10 rows=40></textarea>
+</body>
+<script>
+    var counter = 0;
+    var number;
+    
+    function div(val, by){
+        return (val - val % by) / by;
+    }
+    
+    for (var i = 100000; i <= 999999; i++) {
+        number = i;
+        var first = 0;
+        var last = 0;
+        for (var j = 0; j < 3; j++) {
+            first += number % 10;
+            number = div(number, 10);
+        }
+        for (var j = 0; j < 3; j++) {
+            last += number % 10;
+            number = div(number, 10);
+        }
+        
+        if (first == last) {
+            document.getElementById('lucky').value += i + '\n';
+        }
+    }
+</script>
+</html>

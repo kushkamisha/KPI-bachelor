@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>In column</title>
+</head>
+<script>
+    function get_string() {
+        var str = process_str.my_string.value;
+        for (var i = 0; i < str.length; i++) {
+            process_str.result.value += str.charAt(i) + '\n';
+        }
+    }
+</script>
+<body>
+    <form name='process_str'>
+        <p>Enter string</p>
+        <input type='text' name='my_string' size=20><br>
+        <p>Get string in column char by char</p>
+        <input type='button' value='Get' onclick='get_string()'><hr>
+        <textarea name='result' cols=20 rows=10></textarea>
+    </form>
+</body>
+</html>

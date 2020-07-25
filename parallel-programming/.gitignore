@@ -1,0 +1,20 @@
+# Mac files
+.DS_Store
+*.webloc
+
+# Text files
+*.doc
+*.docx
+
+# Pictures
+*.png
+*.jpg
+
+# Intellij Idea files
+.idea/
+*.iml
+labs/out/
+
+# Node.js files
+node_modules/
+rabbitmq/.env

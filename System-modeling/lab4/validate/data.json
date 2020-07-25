@@ -1,0 +1,15 @@
+{
+    "sharedData": {
+        "time": 0,
+        "timeLimit": 10,
+        "taskCreationTime": {},
+        "taskCompletionTimes": {}
+    },
+    "processorParams": {
+        "queueLimit": 5,
+        "numOfCores": 2,
+        "timeAvgToCreate": 0.1,
+        "timeAvgToComplete": 1,
+        "showLogs": false
+    }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Spaces replacing</title>
+</head>
+<script>
+    function space_replace() {
+        var str = replacing.my_string.value;
+        
+        var arr = str.split(' ');
+        var new_arr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] != '') {
+                new_arr[j] = arr[i];
+                j++;
+            }
+        }
+        
+        for (var i = 0; i < new_arr.length; i++) {
+            replacing.result.value += new_arr[i] + ' ';   
+        }
+    }
+</script>
+<body>
+    <form name='replacing'>
+        <p>Replace multiple spaces by one space.</p>
+        Enter string <input type='text' name='my_string'><br>
+        <input type='button' value='Wanna know' onclick='space_replace()'><br>
+        <input type='text' name='result'><br>
+        <input type='reset'>
+    </form>
+</body>
+</html>

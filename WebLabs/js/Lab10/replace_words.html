@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Word replacing</title>
+</head>
+<script>
+    function replace_word() {
+        var str = repeating.my_string.value;
+        var find = repeating.find.value;
+        var replace = repeating.replace.value;
+        
+        repeating.result.value = str.replace(new RegExp(find, 'g'), replace);
+    }
+</script>
+<body>
+    <form name='repeating'>
+        <p>How many times word is in text?</p>
+        Enter string <input type='text' name='my_string'><br>
+        Word to find <input type='text' name='find'><br>
+        Word to replace on <input type='text' name='replace'><br>
+        <input type='button' value='Wanna know' onclick='replace_word()'><br>
+        <input type='text' name='result'>
+    </form>
+</body>
+</html>

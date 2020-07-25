@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+
+teachersCode
+.idea
+resources/
+other/
+task/
+
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pyc
+*.png
+
+!Report.png

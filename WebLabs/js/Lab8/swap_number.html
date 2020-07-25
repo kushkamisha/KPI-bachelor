@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Swap number</title>
+</head>
+<script>
+    function swap_number() {
+        var number = Number(form1.number.value);
+        var swapped = 0;
+        var temp;
+        var answer = '';
+        
+        if (number < 10) {
+            form1.result.value = number;
+        } else {
+            var str_numb = number.toString();
+            var n = str_numb.length;
+            for (var i = 0; i < n; i++) {
+                temp = str_numb.slice(n-1-i, n-i);
+                answer += temp;
+            }
+            form1.result.value = answer;
+        }
+    }
+</script>
+<body>
+    <form name='form1'>
+        Enter number <input type='text' name='number'><br>
+        Swap number <input type='text' name='result'><br>
+        <input type='button' value='Calculate' onclick='swap_number()'>
+    </form>
+</body>
+</html>

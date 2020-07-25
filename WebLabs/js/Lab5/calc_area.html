@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Calculate area of the figure.</title>
+</head>
+<script>
+    function test(k) {
+        var a = figures.data.value;
+        if (a == '') {
+            alert('Enter value!');
+        } else {
+            figures.result.value = k * Math.pow(a, 2);
+        }
+    }
+</script>
+<body>
+    <form name='figures'>
+        Enter value <input type='text' name='data' size=10><br>
+        Select a figure.<br>
+        <input type='radio' name='figure' value=1 onclick='test(figures.elements[1].value)'>square<br>
+        <input type='radio' name='figure' value=3.14 onclick='test(figures.elements[2].value)'>circle<br>
+        <input type='radio' name='figure' value=0.42 onclick='test(figures.elements[3].value)'>triangle<br>
+        <input type='reset' value='Reset'><hr>
+        Area: <input type='text' name='result' size=10>
+    </form>
+</body>
+</html>

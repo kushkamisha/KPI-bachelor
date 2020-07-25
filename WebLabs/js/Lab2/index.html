@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>JS functions</title>
+</head>
+<script>
+    function area(a, h) {
+        var s = a*h / 2;
+        document.write('Area of the right triangle is ', s, '.');
+    }
+    
+    function area_rec(obj) {
+        obj.result.value = Math.pow(obj.side.value, 2);
+    }
+    
+    function area_points(obj) {
+        var x1 = obj.dot1_x.value;
+        var y1 = obj.dot1_y.value;
+        var x2 = obj.dot2_x.value;
+        var y2 = obj.dot2_y.value;
+        var x3 = obj.dot3_x.value;
+        var y3 = obj.dot3_y.value;
+        
+        var s = Math.abs((x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1-y2)) / 2);
+        obj.dot_result.value = s;
+    }
+    
+    function dot_distance(obj) {
+        var X = obj.X.value;
+        var y = obj.y.value;
+        
+        obj.result.value = Math.pow(Math.pow(X,2) + Math.pow(y,2), 0.5);
+    }
+    
+    function swap_me(obj) {
+        var temp = obj.text1.value;
+        obj.text1.value =  obj.text2.value;
+        obj.text2.value = temp;
+    }
+</script>
+<body>
+    <p>Area of the right triangle.</p>
+    <form name='triangle'>
+        Height: <input type='text' size=5 name='height'><br>
+        Base: <input type='text' size=5 name='base'><br>
+        <input type='button' value='Calculate' onclick='area(document.triangle.height.value, document.triangle.base.value)'>
+    </form>
+    
+    <p>Area of the square.</p>
+    <form name='square'>
+        Side: <input type='text' size=7 name='side' onchange='area_rec(square)'><br>
+        Square: <input type='text' size=7 name='result'><br>
+        <input type='reset' value='Reset'>
+    </form>
+    
+    <p>Area of the triangle using 3 points.</p>
+    <form name='triangle_dots'>
+        Dot 1:<br>
+        &nbsp;&nbsp;X: <input type='text' name='dot1_x'><br>
+        &nbsp;&nbsp;Y: <input type='text' name='dot1_y'><br>
+        Dot 2:<br>
+        &nbsp;&nbsp;X: <input type='text' name='dot2_x'><br>
+        &nbsp;&nbsp;Y: <input type='text' name='dot2_y'><br>
+        Dot 3:<br>
+        &nbsp;&nbsp;X: <input type='text' name='dot3_x'><br>
+        &nbsp;&nbsp;Y: <input type='text' name='dot3_y'><br>
+        
+        <input type='text' style='margin-left: 30px;' placeholder="Focus to get the result"
+            name='dot_result' onfocus='area_points(triangle_dots)'><br>
+        <input type='reset' value='Reset'>
+    </form>
+    
+    <p>Distance to the origin.</p>
+    <form name='dot'>
+        X: <input type='text' name='X'><br>
+        Y: <input type='text' name='y'><br>
+        <input type='text' name='result' value='Select me to get the result' onselect='dot_distance(dot)'>
+    </form>
+    
+    <p>Swap values.</p>
+    <form name='swap'>
+        Input some here: <input style='margin-left: 40px;' type='text' name='text1'><br>
+        Input something different here: <input type='text' name='text2' value='Hit <tab> to swap' onblur='swap_me(swap)'><br>
+    </form>
+</body>
+</html>

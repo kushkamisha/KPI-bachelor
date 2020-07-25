@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Translator</title>
+</head>
+<script>
+    var s = '';
+    var sum = 0;
+    function gr(obj, m) {
+        var r = 100 * (Number(obj.elements[0][m].value) + 1);
+        s += obj.elements[0][m].text + '\r\n';
+        obj.result_text.value = s;
+        sum += r;
+        obj.result.value = r;
+    }
+</script>
+<body>
+    <form name='questionnaire'>
+        <h3>Questionnaire</h3>
+        <table border=3 bgcolor=silver>
+            <tr>
+                <th>Selected language</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td valign=top>
+                    <select name='data' size=3 onchange='gr(questionnaire, questionnaire.data.value)'>
+                        <option value=0>ukrainian
+                        <option value=1>english
+                        <option value=2>chinese
+                    </select>
+                    <input type='text' name='result' size=15>
+                </td>
+                <td>
+                    <textarea name='result_text' cols=15 rows=6></textarea>
+                    <input type='button' value='Sum' onclick='questionnaire.result_group.value=sum'>
+                    <input type='text' name='result_group' size=10>
+                </td>
+            </tr>
+        </table>
+        <input type='reset' value='Cancel' onclick='sum=0;s=""'>
+    </form>
+</body>
+</html>

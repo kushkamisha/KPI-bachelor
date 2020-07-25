@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Image gallery</title>
+</head>
+<script>
+    var img_array = ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg'];
+    var i = 0;
+    
+    function prev() {
+        i--;
+        if (i < 0 || i > 2) {
+            i = 2;
+        }
+        document.images[0].src = img_array[i];
+    }
+    
+    function next() {
+        i++;
+        if (i < 0 || i > 2) {
+            i = 0;
+        }
+        document.images[0].src = img_array[i];
+    }
+</script>
+<body>
+    <center>
+        <h3>Image gallery</h3>
+    <img src='img/img1.jpg'><br>
+    <input type='button' value='prev' onclick='prev()'>
+    <input type='button' value='next' onclick='next()'>
+    </center>
+</body>
+</html>

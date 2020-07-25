@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Swap images</title>
+</head>
+<script>
+    function swap_images(obj) {
+        var a = Number(obj.a1.value);
+        var b = Number(obj.a2.value);
+        
+        if (a < 1 || a > 3 || b < 1 || b > 3) {
+            alert('Images numbers setted incorrect.');
+        } else {
+            var temp = document.images[a-1].src;
+            document.images[a-1].src = document.images[b-1].src;
+            document.images[b-1].src = temp;
+        }
+    }
+</script>
+<body>
+    <center>
+        <p>Images gallery.</p>
+        <img src='img/img1.jpg' width='200' name='picture1' alt='picture1'>
+        <img src='img/img2.jpg' width='200' name='picture2' alt='picture2'>
+        <img src='img/img3.jpg' width='200' name='picture3' alt='picture3'><br>
+        
+        <form name='swap'>
+            <p>Images with numbers.</p>
+            <input type='text' name='a1' size=1><br>
+            <input type='text' name='a2' size=1><br>
+            <input type='button' value='Swap' onclick='swap_images(swap)'>
+        </form>
+    </center>
+</body>
+</html>

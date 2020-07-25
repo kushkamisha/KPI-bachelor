@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Questionnaire</title>
+</head>
+<script>
+    function process_data(obj) {
+        var gender, age, marital_status;
+        
+        if (obj.gender[0].checked) {
+            gender = obj.gender[0].value;
+        } else {
+            gender = obj.gender[1].value;
+        }
+        
+        age = Number(obj.age.value);
+        
+        if (obj.marital[0].checked) {
+            marital_status = obj.marital[0].value;
+        } else if (obj.marital[1].checked) {
+            marital_status = obj.marital[1].value;
+        } else {
+            marital_status = obj.marital[2].value;
+        }
+        
+        document.getElementById('result').innerHTML = 'gender: ' + gender + '<br>';
+        document.getElementById('result').innerHTML += 'age: ' + age + '<br>';
+        document.getElementById('result').innerHTML += 'marital status: ' + marital_status + '<br>';
+    }
+</script>
+<body>
+    <p>Simple questionnaire.</p>
+    <form name='questionnaire'>
+        What is your gender?<br>
+        <input type='radio' name='gender' checked value=male> Male<br>
+        <input type='radio' name='gender' value=female> Female<br>
+        What is your age?<br>
+        <input type='text' name='age' size=3>
+        What is your marital status?<br>
+        <input type='radio' name='marital' checked value=single> Single<br>
+        <input type='radio' name='marital' value=engaged> Engaged<br>
+        <input type='radio' name='marital' value=married> Married<br>
+        
+        <input type='button' value='Send data' onclick='process_data(questionnaire)'>
+    </form><hr>
+    <div id='result'></div>
+</body>
+</html>

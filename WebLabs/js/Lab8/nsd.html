@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>NSD</title>
+</head>
+<script>
+    function nod(obj) {
+        var n = numbers.numb1.value;
+        var m = numbers.numb2.value;
+        var p = n % m;
+        while (p != 0) {
+            n = m;
+            m = p;
+            p = n % m;
+        }
+        obj.result.value = m;
+    }
+</script>
+<body>
+    <form name='numbers'>
+        Enter number 1 <input type='text' name='numb1' size=8><br>
+        Enter number 2 <input type='text' name='numb2' size=8><br>
+        Greatest common divisor <input type='text' name='result' size=8><br>
+        <input type='button' value='Calculate' onclick='nod(numbers)'>
+        <input type='reset'>
+    </form>
+</body>
+</html>

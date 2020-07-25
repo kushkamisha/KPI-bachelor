@@ -1,0 +1,1497 @@
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:11:05 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.4/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 250ms (Views: 11.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:19:01 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.4/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 7ms (Views: 4.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:21:24 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1021ms (Views: 1019.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:25:05 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 23.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:25:24 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 29.7ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:28:00 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 50.8ms)
+
+
+Started GET "/sdf" for 62.80.179.126 at 2018-03-12 13:29:26 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sdf"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:29:30 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.1ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:29:50 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:30:55 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 29.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:36:55 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:39:31 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.2ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:39:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.8ms)
+
+
+Started GET "/blog.html" for 62.80.179.126 at 2018-03-12 13:39:36 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/blog.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:39:39 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 19.1ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:39:44 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:42:04 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:42:19 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:43:04 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:45:19 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `match' for main:Object
+Did you mean?  catch):
+  
+app/controllers/tables_controller.rb:6:in `<top (required)>'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:45:53 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined method `get' for main:Object
+Did you mean?  gets
+               gem):
+  
+app/controllers/tables_controller.rb:6:in `<top (required)>'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:47:32 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:47:35 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 19.4ms)
+
+
+Started GET "/blog.html" for 62.80.179.126 at 2018-03-12 13:47:35 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:47:35 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.4ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:47:36 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:47:42 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:48:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:48:46 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:49:08 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.1ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:49:39 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.0ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:49:41 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:49:48 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/blog.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.2ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:50:30 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/blog.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:50:32 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:51:04 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 13:51:06 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/blog.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.2ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:51:07 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:58:25 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 13:59:57 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 34.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:01:12 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::Template::Error (Missing partial tables/_horizontal-menu, application/_horizontal-menu with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/blog/app/views"
+):
+    1: <%= render 'horizontal-menu' %>
+    2: 
+    3: <!-- First table -->
+    4: <div>3.1</div>
+  
+app/views/tables/index.html.erb:1:in `_app_views_tables_index_html_erb___4393089359429387000_69831874424280'
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:01:36 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (Missing partial tables/_tables#horizontal-menu, application/_tables#horizontal-menu with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/blog/app/views"
+):
+    1: <%= render 'tables#horizontal-menu' %>
+    2: 
+    3: <!-- First table -->
+    4: <div>3.1</div>
+  
+app/views/tables/index.html.erb:1:in `_app_views_tables_index_html_erb___4393089359429387000_69831849875420'
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:04:38 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::Template::Error (Missing partial tables/_horizontal-menu with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/blog/app/views"
+):
+    1: <%= render 'tables/horizontal-menu' %>
+    2: 
+    3: <!-- First table -->
+    4: <div>3.1</div>
+  
+app/views/tables/index.html.erb:1:in `_app_views_tables_index_html_erb___4393089359429387000_69831941244480'
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:05:03 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.8ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:05:11 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (Missing partial tables/_tables#horizontal-menu, application/_tables#horizontal-menu with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/blog/app/views"
+):
+    1: <%= render 'tables#horizontal-menu' %>
+    2: 
+    3: <!-- First table -->
+    4: <div>3.1</div>
+  
+app/views/tables/index.html.erb:1:in `_app_views_tables_index_html_erb___4393089359429387000_69831845933080'
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:05:19 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:06:14 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.0ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:06:16 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.1ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:06:18 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.7ms)
+  Rendered tables/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 24.8ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:08:02 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:08:04 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 21.6ms)
+
+
+Started GET "/why-us" for 62.80.179.126 at 2018-03-12 14:08:05 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#why-us as HTML
+  Rendering tables/why-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/why-us.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms)
+
+
+Started GET "/photos" for 62.80.179.126 at 2018-03-12 14:08:06 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#photos as HTML
+  Rendering tables/photos.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/photos.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.9ms)
+
+
+Started GET "/about-us" for 62.80.179.126 at 2018-03-12 14:08:08 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#about-us as HTML
+  Rendering tables/about-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/about-us.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:08:09 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 18.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:08:59 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:08:59 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 17.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:09:40 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 157ms (Views: 155.7ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:09:59 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 41.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:10:22 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 38.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:10:36 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 41.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:10:46 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:11:10 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 19.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:11:34 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:11:52 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 36.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:12:05 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 38.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:12:13 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 48.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:12:53 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 40.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:13:13 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "    position": expected ";", was ": absolute;"):
+    4:     <title>Blog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/tables.scss:24
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3219655175441293403_69831845932200'
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:13:25 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 55ms (Views: 52.8ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:13:45 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 36.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:14:04 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:14:16 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 39.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:14:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:14:44 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 18.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:15:32 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 40.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:15:50 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 44.2ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:16:22 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 57.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:16:41 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 35.7ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:16:57 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 21.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:17:02 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 45.6ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:17:12 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 37.9ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:17:21 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 30.0ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:17:47 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 24.4ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:17:52 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.8ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:18:00 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.1ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:18:03 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/blog.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 22.6ms)
+
+
+Started GET "/why-us" for 62.80.179.126 at 2018-03-12 14:18:05 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#why-us as HTML
+  Rendering tables/why-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/why-us.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 34.9ms)
+
+
+Started GET "/photos" for 62.80.179.126 at 2018-03-12 14:18:06 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#photos as HTML
+  Rendering tables/photos.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/photos.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 19.7ms)
+
+
+Started GET "/photos" for 62.80.179.126 at 2018-03-12 14:18:07 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#photos as HTML
+  Rendering tables/photos.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/photos.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 24.1ms)
+
+
+Started GET "/about-us" for 62.80.179.126 at 2018-03-12 14:18:07 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#about-us as HTML
+  Rendering tables/about-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/about-us.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.3ms)
+
+
+Started GET "/about-us" for 62.80.179.126 at 2018-03-12 14:18:42 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#about-us as HTML
+  Rendering tables/about-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/about-us.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 36.7ms)
+
+
+Started GET "/photos" for 62.80.179.126 at 2018-03-12 14:18:44 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#photos as HTML
+  Rendering tables/photos.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/photos.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 20.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:18:46 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.7ms)
+  Rendered tables/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 19.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:19:07 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/blog.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 24.1ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:20:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/blog.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.2ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:20:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 122ms (Views: 120.6ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:20:57 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.5ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:20:57 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 108ms (Views: 106.1ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:21:29 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/blog.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:21:29 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 69ms (Views: 67.8ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:22:08 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 18.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:24:19 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.8ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:24:46 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 18.4ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:25:31 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (1.0ms)
+  Rendered tables/blog.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 29ms (Views: 26.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:26:42 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/blog.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:28:33 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms)
+
+
+Started GET "/left.html" for 62.80.179.126 at 2018-03-12 14:28:36 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/left.html"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:28:38 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.6ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:29:14 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 35.9ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:29:16 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/blog.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 18.3ms)
+
+
+Started GET "/" for 62.80.179.126 at 2018-03-12 14:29:19 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 16.2ms)
+
+
+Started GET "/blog" for 62.80.179.126 at 2018-03-12 14:29:22 +0000
+Cannot render console from 62.80.179.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.5ms)
+
+
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:09:45 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 526ms (Views: 308.4ms)
+
+
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:09:48 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms)
+
+
+Started GET "/blog" for 77.47.194.243 at 2018-03-19 08:09:51 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/blog.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.2ms)
+
+
+Started GET "/why-us" for 77.47.194.243 at 2018-03-19 08:09:55 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#why-us as HTML
+  Rendering tables/why-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/why-us.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 47.8ms)
+
+
+Started GET "/blog" for 77.47.194.243 at 2018-03-19 08:09:57 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/blog.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.3ms)
+
+
+Started GET "/photos" for 77.47.194.243 at 2018-03-19 08:09:57 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#photos as HTML
+  Rendering tables/photos.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.6ms)
+  Rendered tables/photos.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms)
+
+
+Started GET "/about-us" for 77.47.194.243 at 2018-03-19 08:09:58 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#about-us as HTML
+  Rendering tables/about-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/about-us.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 18.0ms)
+
+
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:09:59 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.8ms)
+  Rendered tables/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 26.3ms)
+
+
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.4ms)
+  Rendered tables/index.html.erb within layouts/application (3.9ms)
+Started GET "/photos" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Started GET "/why-us" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Started GET "/about-us" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Completed 200 OK in 114ms (Views: 110.0ms)
+
+
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#why-us as HTML
+Started GET "/blog" for 77.47.194.243 at 2018-03-19 08:40:25 +0000
+Processing by TablesController#index as HTML
+Processing by TablesController#photos as HTML
+Processing by TablesController#about-us as HTML
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering tables/why-us.html.erb within layouts/application
+  Rendering tables/photos.html.erb within layouts/application
+Processing by TablesController#blog as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendering tables/about-us.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (1.7ms)
+  Rendered tables/_horizontal-menu.html.erb (0.1ms)
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.0ms)
+  Rendered tables/_horizontal-menu.html.erb (0.0ms)
+  Rendered tables/why-us.html.erb within layouts/application (13.9ms)
+  Rendered tables/photos.html.erb within layouts/application (10.4ms)
+  Rendered tables/_horizontal-menu.html.erb (0.0ms)
+  Rendered tables/index.html.erb within layouts/application (6.5ms)
+  Rendered tables/about-us.html.erb within layouts/application (4.8ms)
+  Rendered tables/blog.html.erb within layouts/application (164.9ms)
+Completed 200 OK in 347ms (Views: 220.6ms)
+
+
+Completed 200 OK in 389ms (Views: 259.4ms)
+
+
+Completed 200 OK in 537ms (Views: 535.3ms)
+
+
+Completed 200 OK in 436ms (Views: 432.0ms)
+
+
+Completed 200 OK in 410ms (Views: 408.7ms)
+
+
+Started GET "/" for 77.47.194.243 at 2018-03-19 08:40:36 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.2ms)
+  Rendered tables/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.1ms)
+
+
+Started GET "/blog" for 77.47.194.243 at 2018-03-19 08:40:40 +0000
+Cannot render console from 77.47.194.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#blog as HTML
+  Rendering tables/blog.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.3ms)
+  Rendered tables/blog.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 24ms (Views: 22.2ms)
+
+
+Started GET "/" for 176.37.12.50 at 2018-04-15 19:19:10 +0000
+Cannot render console from 176.37.12.50! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TablesController#index as HTML
+  Rendering tables/index.html.erb within layouts/application
+  Rendered tables/_horizontal-menu.html.erb (0.5ms)
+  Rendered tables/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 545ms (Views: 317.4ms)
+
+

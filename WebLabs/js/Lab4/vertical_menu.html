@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Vertical menu.</title>
+</head>
+<script>
+    function img(n, action) {
+        if (action) {
+            document.images[n-1].src = 'img/serpia' + n + '.jpg';
+        } else {
+            document.images[n-1].src = 'img/img' + n + '.jpg';
+        }
+    }
+</script>
+<body>
+    <h2>Content</h2>
+    <img src="img/img1.jpg" аlt="option 1" border="0" height="50" onmouseover="img(1,1)" onmouseout="img(1,0)"><br>
+    <img src="img/img2.jpg" аlt="option 2" border="0" height="50"  onmouseover="img(2,1)" onmouseout="img(2,0)"><br>
+    <img src="img/img3.jpg" аlt="option 3" border="0" height="50" onmouseover="img(3,1)" onmouseout="img(3,0)"><br>
+</body>
+</html>

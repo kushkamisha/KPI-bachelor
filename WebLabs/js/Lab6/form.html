@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Courses</title>
+</head>
+<style>
+    #my_form {
+        margin-left: 40%;
+    }
+    
+    #my_form input[type=button] {
+        margin-left: 120px;
+    }
+</style>
+<script>
+    var total_price = 0;
+    
+    function calculate_price(n) {
+        var current_price = 0;
+        var obj = document.getElementById('course_features1');
+        
+        if (obj.getElementsByName('duration')[0].checked) {
+            current_price += Number(obj.getElementsByName('duration')[0].value);
+        } else if (obj.getElementsByName('duration')[1].checked) {
+            current_price += Number(obj.getElementsByName('duration')[1].value);
+        } else if (obj.getElementsByName('duration')[2].checked) {
+            current_price += Number(obj.getElementsByName('duration')[2].value);
+        }
+        
+        // if (obj.language_[0].checked) {
+        //     current_price += Number(obj.language_[0].value);
+        // } else if (obj.language_[1].checked) {
+        //     current_price += Number(obj.language_[1].value);
+        // } else if (obj.language_[2].checked) {
+        //     current_price += Number(obj.language_[2].value);
+        // }
+        
+        // if (obj.course_form[0].checked) {
+        //     current_price += Number(obj.course_form[0].value);
+        // } else if (obj.course_form[1].checked) {
+        //     current_price += Number(obj.course_form[1].value);
+        // }
+        
+        total_price += current_price;
+        
+        document.getElementById('price' + n).innerHTML = 'Your current price is ' + current_price;
+        document.getElementById('total_price' + n).innerHTML = 'Your total price is ' + total_price;
+    }
+</script>
+<body>
+    <div id='course_features1'>
+        How fast do you want to complete this course?<br>
+        <input type='radio' name='duration' value=100> 3 weeks<br>
+        <input type='radio' name='duration' value=70> 4 weeks<br>
+        <input type='radio' name='duration' value=0 checked> 8 weeks<br>
+        In what language do you want to take the course?<br>
+        <input type='radio' name='language_' value=0 checked> English<br>
+        <input type='radio' name='language_' value=100> French<br>
+        <input type='radio' name='language_' value=100> Ukrainian<br>
+        In what form do you want to take the course?<br>
+        <input type='radio' name='course_form' value=0 checked> Online<br>
+        <input type='radio' name='course_form' value=300> In class<hr width=350 align='left'>
+        
+        <div id='price1'></div>
+        <div id='total_price1'></div>
+        <input type='button' value='Calculate' onclick='calculate_price(1)'>
+    </div>
+</body>
+</html>

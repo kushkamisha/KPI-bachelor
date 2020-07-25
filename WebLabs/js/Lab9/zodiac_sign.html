@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Zodiac sign</title>
+</head>
+<script>
+    function get_sign(obj) {
+        var m = Number(obj.mounth.value) - 1;
+        var d = Number(obj.day.value) - 1;
+        var sign = '';
+        
+        if (m == 0) {
+            if (d >= 20) {
+                sign = 'Aquarius';
+            } else {
+                sign = 'Capricorn';
+            }
+        } else if (m == 1) {
+            if (d >= 19) {
+                sign = 'Pisces';
+            } else {
+                sign = 'Aquarius';
+            }
+        } else if (m == 2) {
+            if (d >= 21) {
+                sign = 'Aries';
+            } else {
+                sign = 'Pisces';
+            }
+        } else if (m == 3) {
+            if (d >= 20) {
+                sign = 'Taurus';
+            } else {
+                sign = 'Aries';
+            }
+        } else if (m == 4) {
+            if (d >= 21) {
+                sign = 'Gemini';
+            } else {
+                sign = 'Taurus';
+            }
+        } else if (m == 5) {
+            if (d >= 21) {
+                sign = 'Cancer';
+            } else {
+                sign = 'Gemini';
+            }
+        } else if (m == 6) {
+            if (d >= 23) {
+                sign = 'leo'
+            } else {
+                sign = 'Cancer';
+            }
+        } else if (m == 7) {
+            if (d >= 23) {
+                sign = 'Virgo';
+            } else {
+                sign = 'leo';
+            }
+        } else if (m == 8) {
+            if (d >= 23) {
+                sign = 'Libra';
+            } else {
+                sign = 'Virgo';
+            }
+        } else if (m == 9) {
+            if (d >= 23) {
+                sign = 'Scorpio';
+            } else {
+                sign = 'Libra';
+            }
+        } else if (m == 10) {
+            if (d >= 22) {
+                sign = 'Saggitarius';
+            } else {
+                sign = 'Scorpio';
+            }
+        } else if (m == 11) {
+            if (d >= 22) {
+                sign = 'Capricorn';
+            } else {
+                sign = ' Saggitarius';
+            }
+        }
+    
+    form1.result.value = sign;
+    }
+</script>
+<body>
+    <form name='form1'>
+        <p>I know your Zodiak sign.</p>
+        Enter mounth <input type='text' size=8 name='mounth'><br>
+        Enter day <input type='text' size=8 name='day'><br>
+        <input type='button' value='Calculate' onclick='get_sign(form1)'><hr>
+        Your Zodiac sign<br>
+        <input type='text' size=10 name='result'>
+    </form>
+</body>
+</html>

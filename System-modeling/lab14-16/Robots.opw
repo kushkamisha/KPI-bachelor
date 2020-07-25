@@ -1,0 +1,19 @@
+[RESOURCES]
+processor 1
+processor 2
+robot 3
+robot 2
+robot 1
+[VARIABLES]
+Processing by #1.NumberOut
+Processing by #1.NumberIn
+Detail arrival.NumberOut
+In the storehouse.NumberOut
+Processing by #2.NumberOut
+Processing by #2.NumberIn
+Robot 1 moving a detail.NumberOut
+Robot 2 moving a detail.NumberOut
+Robot 3 moving a detail.NumberOut
+Robot 1 moving a detail.NumberIn
+Robot 2 moving a detail.NumberIn
+Robot 3 moving a detail.NumberIn

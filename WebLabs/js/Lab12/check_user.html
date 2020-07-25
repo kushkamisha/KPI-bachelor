@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Check user</title>
+</head>
+<script>
+    function is_number(numb) {
+        var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+        if (numbers.includes(numb)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function check_form() {
+        var username = userinfo.username.value;
+        var email = userinfo.email.value;
+        
+        if (username == '' || username.length < 3 || is_number(username[0])) {
+            alert('Username is incorrect!');
+        } else if (email == '' || email.search('@') == -1 || email[email.search('@')+1] == undefined) {
+            alert('Incorrect email adress!');
+        } else {
+            alert('The form is fullfilled correctly.');
+        }
+    }
+</script>
+<body>
+    <form name='userinfo'>
+        Enter your name <input type='text' name='username'><br>
+        Enter your email <input type='text' name='email'><br>
+        <input type='button' value='Check form' onclick='check_form()'>
+    </form>
+</body>
+</html>

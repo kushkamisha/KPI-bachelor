@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Zoom effect.</title>
+</head>
+<script>
+    function zoom_image(zoom_flag) {
+        if (zoom_flag) {
+            document.images[0].width += 30;
+            document.images[0].height += 30;
+        } else {
+            document.images[0].width -= 30;
+            document.images[0].height -= 30;
+        }
+    }
+</script>
+<body>
+    <center>
+        <img src='img/img3.jpg' width='400' name='image3' onmouseover='zoom_image(1)' onmouseout='zoom_image(0)' alt='image 3'>
+    </center>
+</body>
+</html>

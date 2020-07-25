@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Towns</title>
+</head>
+<script>
+    var sum = 0;
+    
+    function eq() {
+        var q = test.question.value;
+        var a = test.answer.value;
+        if (a == q) {
+            sum += 1;
+        }
+    }
+    
+    function get_result() {
+        test.result.value = sum;
+    }
+</script>
+<body>
+    <h3 align=center>Towns and places</h3>
+    <form name='test'>
+        <table border=3 align=center cellpadding=5 cellspacing=6 bgcolor=silver>
+            <tr>
+                <th>Place</th>
+                <th>In town</th>
+            </tr>
+            <tr>
+                <td>
+                    <select size=7 name='question' onchange='q=test.question.value'>
+                        <option value='mad'>Museum Prado</option>
+                        <option value='ber'>Reigstag</option>
+                        <option value='mil'>La Scala operum</option>
+                        <option value='ier'>The wall of cry</option>
+                        <option value='mek'>Glory stone Kaab</option>
+                        <option value='par'>Triumf arch</option>
+                        <option value='new'>The Statue of Liberty</option>
+                        <option value='lon'>Tower</option>
+                    </select>
+                </td>
+                <td>
+                    <select size=7 name='answer' onchange='eq()'>
+                        <option value='mek'>Mecca</option>
+                        <option value='ier'>Herusalim</option>
+                        <option value='mil'>Milan</option>
+                        <option value='par'>Paris</option>
+                        <option value='mad'>Madrid</option>
+                        <option value='lon'>London</option>
+                        <option value='new'>New York</option>
+                        <option value='ber'>Berlin</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        Number of correct answers
+        <input type='text' name='result' size=5><br>
+        <input type='button' value='Result' onclick='get_result()'><br>
+        <input type='reset' onclick='sum=0'>
+    </form>
+</body>
+</html>

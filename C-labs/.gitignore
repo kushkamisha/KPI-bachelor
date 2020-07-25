@@ -1,0 +1,11 @@
+# MacOS files
+.DS_Store
+
+# Word files history
+~$*.doc
+~$*.docx
+
+# Visual Studio Code files
+.vscode
+bin
+obj

@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "b91d84b5-4db9-4b48-9f45-54f1d1d9bf7c",
+		"name": "Circus",
+		"description": "Requests to the Circus website at http://circus.qamania.org/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all performances",
+			"item": [
+				{
+					"name": "Get all performances",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6a2ff3f6-b141-49ed-b44f-bd612d1f4e22",
+								"exec": [
+									"tests[\"Get all performances\"] = responseCode.code === 200"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://circus.qamania.org/ws/performances",
+							"protocol": "http",
+							"host": [
+								"circus",
+								"qamania",
+								"org"
+							],
+							"path": [
+								"ws",
+								"performances"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get a performance",
+			"item": [
+				{
+					"name": "Positive",
+					"item": [
+						{
+							"name": "Get one performance",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c8d5482d-c80b-405b-b273-08743b34d4e5",
+										"exec": [
+											"pm.test(\"Get a performance with id = 105\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.id).eql(105)",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performance/105",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performance",
+										"105"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Negative",
+					"item": [
+						{
+							"name": "Get one performance",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bbb090be-5b6d-43b8-9324-1f82e6cc3e78",
+										"exec": [
+											"tests[\"Get unexisted performance\"] = responseCode.code === 404"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performance/99999",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performance",
+										"99999"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Create a performance",
+			"item": [
+				{
+					"name": "Positive",
+					"item": [
+						{
+							"name": "Create a performance",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "2cd59601-f794-4f13-b33e-ed9d4cd694af",
+										"exec": [
+											"pm.test(\"Create a performance\", () => {",
+											"    const expectedData = JSON.stringify({",
+											"    \"date\": \"2020-01-24\",",
+											"    \"time\": \"19:00:00\",",
+											"    \"name\": \"Dopka\",",
+											"    \"description\": \"You'll be on the dopka\",",
+											"    \"price\": 1,",
+											"    \"features\": [",
+											"        \"uni\"",
+											"    ],",
+											"    \"ticketsNumber\": 20",
+											"})",
+											"    const data = pm.response.json()",
+											"    delete data['id']",
+											"    pm.expect(JSON.stringify(data)).eql(expectedData)",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"24-01-2020\",\n  \"time\": \"19:00\",\n  \"price\": 1,\n  \"name\": \"Dopka\",\n  \"description\": \"You'll be on the dopka\",\n  \"features\": [\"uni\"],\n  \"ticketsNumber\": 20\n}"
+								},
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performances",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performances"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Negative",
+					"item": [
+						{
+							"name": "Invalid price",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "477accad-a343-4b52-aad2-39a3f55dcb46",
+										"exec": [
+											"pm.test(\"Create a performance with an invalid price\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.message.price[0]).eql(\"Ensure this value is greater than or equal to 1.\")",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"24-01-2020\",\n  \"time\": \"19:00\",\n  \"price\": 0,\n  \"name\": \"Dopka\",\n  \"description\": \"You'll be on the dopka\",\n  \"features\": [\"uni\"],\n  \"ticketsNumber\": 20\n}"
+								},
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performances",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performances"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "No date",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86d03dca-2951-4108-9734-f24eb12d3be1",
+										"exec": [
+											"pm.test(\"Create a performance without a date\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.message.date[0]).eql(\"This field is required.\")",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"time\": \"19:00\",\n  \"price\": 1,\n  \"name\": \"Dopka\",\n  \"description\": \"You'll be on the dopka\",\n  \"features\": [\"uni\"],\n  \"ticketsNumber\": 20\n}"
+								},
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performances",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performances"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Invalid date",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f3cfbf5f-3182-4196-a3ea-514557ebb577",
+										"exec": [
+											"pm.test(\"Create a performance with an invalid date\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.message.date[0]).eql(\"Enter a valid date.\")",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"01-99-2012\",\n  \"time\": \"19:00\",\n  \"price\": 1,\n  \"name\": \"Dopka\",\n  \"description\": \"You'll be on the dopka\",\n  \"features\": [\"uni\"],\n  \"ticketsNumber\": 20\n}"
+								},
+								"url": {
+									"raw": "http://circus.qamania.org/ws/performances",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"performances"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Get the tickets",
+			"item": [
+				{
+					"name": "Positive",
+					"item": [
+						{
+							"name": "Get a ticket",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e51683c4-07b9-4508-a7fb-6a6fa4bb564b",
+										"exec": [
+											"pm.test(\"Get a ticket\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.tickets.length).eql(1)",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/tickets?page=1&size=1",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get tickets",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9ff0ffff-f111-41bf-a0b3-ca35dd70199f",
+										"exec": [
+											"pm.test(\"Get 5 tickets\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.tickets.length).eql(5)",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/tickets?page=1&size=5",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Negative",
+					"item": [
+						{
+							"name": "Too big page number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6f49e06a-2961-439b-aa5b-0a44fb9a2fdc",
+										"exec": [
+											"tests[\"Too big page number\"] = responseCode.code === 500"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/tickets?page=9999999999999999999&size=5",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "9999999999999999999"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Not enough params",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7f46181e-3db3-4315-9d60-d898e7cd5070",
+										"exec": [
+											"pm.test(\"Invalid number of params\", () => {",
+											"    const data = pm.response.json()",
+											"    pm.expect(data.message.page[0]).eql(\"This field is required.\")",
+											"    pm.expect(data.message.size[0]).eql(\"This field is required.\")",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://circus.qamania.org/ws/tickets",
+									"protocol": "http",
+									"host": [
+										"circus",
+										"qamania",
+										"org"
+									],
+									"path": [
+										"ws",
+										"tickets"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

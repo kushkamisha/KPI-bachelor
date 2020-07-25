@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Current time</title>
+</head>
+<script>
+    function get_time() {
+        var t = new Date;
+        var h = t.getHours();
+        var m = t.getMinutes();
+        var s = t.getSeconds();
+        var res = '';
+        
+        if (h < 10) {
+            res += '0' + h;
+        } else {
+            res += h;
+        }
+        if (m < 10) {
+            res += ':0' + m;
+        } else {
+            res += ':' + m;
+        }
+        if (s < 10) {
+            res += ':0' + s;
+        } else {
+            res += ':' + s;
+        }
+        
+        time.result.value = res;
+    }
+</script>
+<body>
+    <form name='time'>
+        <input type='button' value='Get time' onclick='get_time()'><br>
+        <input type='text' size=10 name='result'>
+    </form>
+</body>
+</html>

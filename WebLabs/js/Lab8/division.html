@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Division</title>
+</head>
+<body>
+    <form name='division'>
+        <p>Get all dividers of the number</p>
+        Enter number <input type='text' name='number'><br>
+        <input type='button' value='Get' onclick='get_div()'>
+        <textarea name='result' rows=10></textarea>
+    </form>
+</body>
+<script>
+    function get_div() {
+        var number = Number(division.number.value);
+        division.result.value = 1 + '\n';
+        for (var i = 2; i <= Math.floor(number / 2); i++) {
+            if (number % i == 0) {
+                division.result.value += i + '\n';
+            }
+        }
+        division.result.value += number + '\n';
+    }
+</script>
+</html>

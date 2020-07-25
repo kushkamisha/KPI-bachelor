@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>What week?</title>
+</head>
+<script>
+    function get_week() {
+        var y = Number(form1.year.value);
+        var m = Number(form1.mounth.value) - 1;
+        var d = Number(form1.day.value) - 1;
+        
+        var date = new Date(y, m, d);
+        var onejan = new Date(date.getFullYear(), 0, 1);
+        form1.result.value = Math.ceil((((date - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+    }
+</script>
+<body>
+    <form name='form1'>
+        Enter year <input type='text' size=8 name='year'><br>
+        Enter mounth <input type='text' size=8 name='mounth'><br>
+        Enter day <input type='text' size=8 name='day'><br>
+        <input type='button' value='What week?' onclick='get_week()'><hr>
+        <textarea name='result' cols=20 rows=10></textarea>
+    </form>
+</body>
+</html>

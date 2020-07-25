@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>What year name?</title>
+</head>
+<script>
+    function get_year_name() {
+        var y = Number(form1.year.value) - 1;
+        
+        var year_zero = 1983;
+        var colors = ['Green', 'Red', 'Yellow', 'White', 'Black'];
+        var animals = ['Rat', 'Cow', 'Tiger', 'Hare', 'Dragon', 'Snake', 'Horse', 'Sheep', 'Monkey', 'Hen', 'Dog', 'Pig'];
+        
+        while (Math.abs(year_zero - y) >= 60) {
+            if (y > year_zero) {
+                y -= 60;
+            } else {
+                y += 60;
+            }
+        }
+        
+        var delta = Math.abs(y - year_zero);
+        if (delta == 0) {
+            var color = colors[0];
+        var animal = animals[0];
+        } else {
+            var color = colors[Math.ceil(delta / 12)];
+            var animal = animals[delta % 12];
+        }
+        
+        form1.result.value = color + ' ' + animal;
+    }
+</script>
+<body>
+    <form name='form1'>
+        <p>What is the name of the current year in the Eastern calendar?</p>
+        Enter year <input type='text' size=8 name='year'><br>
+        <input type='button' value='Want know!' onclick='get_year_name()'><hr>
+        Year name<br>
+        <textarea name='result' cols=20 rows=10></textarea>
+    </form>
+</body>
+</html>

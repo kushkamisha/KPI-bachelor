@@ -1,0 +1,68 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Catalog">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Paper">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:ID" name="id" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Type">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="type" default="magazine" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Frequency">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="daily" />
+                    <xs:enumeration value="weekly" />
+                    <xs:enumeration value="bi-weekly" />
+                    <xs:enumeration value="monthly" />
+                    <xs:enumeration value="less than once a month" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chars">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:boolean" name="Colorful" />
+                    <xs:element name="Volume">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                          <xs:minInclusive value="0" />
+                          <xs:maxInclusive value="1000" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:boolean" name="Glossy" />
+                    <xs:element name="SubscribtionIndex">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[A-Za-z]{2,4}-[0-9]{3,10}"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

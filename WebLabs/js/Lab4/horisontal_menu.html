@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Horisontal menu.</title>
+</head>
+<style>
+    #arrow {
+        margin: 0 15px 15px 0;
+        visibility: hidden;
+    }
+</style>
+<script>
+    function is_active(n, action) {
+        if (action) {
+            document.images[n-1].style.visibility = "visible";
+        } else {
+            document.images[n-1].style.visibility = "hidden";
+        }
+    }
+</script>
+<body>
+    <center>
+        <h2>Content</h2>
+        <img src="img/arrow.png" id="arrow" alt="arrow" border="0" height="50">
+        <img src="img/arrow.png" id="arrow" alt="arrow" border="0" height="50">
+        <img src="img/arrow.png" id="arrow" alt="arrow" border="0" height="50"><br>
+        
+        <img src="img/img1.jpg" аlt="option 1" border="0" height="50" onmouseover="is_active(1,1)" onmouseout="is_active(1,0)">
+        <img src="img/img2.jpg" аlt="option 2" border="0" height="50"  onmouseover="is_active(2,1)" onmouseout="is_active(2,0)">
+        <img src="img/img3.jpg" аlt="option 3" border="0" height="50" onmouseover="is_active(3,1)" onmouseout="is_active(3,0)">
+    </center>
+</body>
+</html>

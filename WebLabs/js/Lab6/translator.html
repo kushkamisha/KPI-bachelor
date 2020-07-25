@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Translator</title>
+</head>
+<script>
+    function grant() {
+        var salary = 0;
+        if (document.languages.lang[0].checked) {
+            salary += Number(document.languages.lang[0].value);
+        }
+        if (document.languages.lang[1].checked) {
+            salary += Number(document.languages.lang[1].value);
+        }
+         if (document.languages.lang[2].checked) {
+            salary += Number(document.languages.lang[2].value);
+        }
+        document.languages.salary.value = 'Your expected salary is ' + salary + '$.';
+    }
+</script>
+<body>
+   <h3>Translator questionnaire.</h3> 
+   Check languages which you know<br>
+   <form name='languages'>
+       <input type='checkbox' name='lang' value=100> ukrainian<br>
+       <input type='checkbox' name='lang' value=200> english<br>
+       <input type='checkbox' name='lang' value=300> chinese<br>
+       <input type='button' value='Get salary' onclick='grant()'><hr>
+       <input type='text' size=50 name='salary'><br>
+       <input type='reset'>
+   </form>
+</body>
+</html>

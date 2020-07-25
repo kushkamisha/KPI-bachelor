@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Perfect numbers</title>
+</head>
+<script>
+    var n=parseInt(prompt('Enter natural number', 6));
+    var sum = n-1;
+    var temp = n;
+    for(var i = 2; n>1; i++){
+        if(!(n % i)) {
+            sum -= i;
+            n = n / i; 
+        } else {
+            i++;
+        }
+    }
+    
+    if (!sum) {
+        alert("Number " + temp + " is perfect");
+    } else {
+        alert("Number " + temp + " is not perfect"); 
+    }
+</script>
+<body>
+</body>
+</html>

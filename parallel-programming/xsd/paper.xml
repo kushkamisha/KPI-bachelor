@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Catalog xsi:noNamespaceSchemaLocation="paper.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Paper>
+    <Title id="NYTM-1234">The New York Times</Title>
+    <Type type="newspaper">newspaper</Type>
+    <Frequency>daily</Frequency>
+    <Chars>
+      <Colorful>false</Colorful>
+      <Volume>10</Volume>
+      <Glossy>false</Glossy>
+      <SubscribtionIndex>NYTM-1234</SubscribtionIndex>
+    </Chars>
+  </Paper>
+  <Paper>
+    <Title id="FRB-12345">Forbes</Title>
+    <Type type="magazine">Magazine</Type>
+    <Frequency>bi-weekly</Frequency>
+    <Chars>
+      <Colorful>true</Colorful>
+      <Volume>123</Volume>
+      <Glossy>true</Glossy>
+      <SubscribtionIndex>FRB-12345</SubscribtionIndex>
+    </Chars>
+  </Paper>
+</Catalog>

@@ -1,0 +1,30 @@
+﻿Построение начато 23.12.2017 20:44:59.
+     1>Проект "C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\MatrixDll\MatrixDll.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\MatrixDll.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         Для всех выходных данных обновления не требуется.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MATRIXDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MatrixDll.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MatrixDll.cpp
+         MatrixDll.cpp
+       ManifestResourceCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\Debug\MatrixDll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MatrixDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\Debug\MatrixDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\Debug\MatrixDll.lib" /MACHINE:X86 /DLL Debug\MatrixDll.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\MatrixDll.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\MatrixDll.dll.embed.manifest" /manifest Debug\MatrixDll.dll.intermediate.manifest
+         Для всех выходных данных обновления не требуется.
+       LinkEmbedManifest:
+         Для всех выходных данных обновления не требуется.
+         MatrixDll.vcxproj -> C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\Debug\MatrixDll.dll
+       FinalizeBuildStatus:
+         Файл "Debug\MatrixDll.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\MatrixDll.lastbuildstate".
+     1>Построение проекта "C:\Documents and Settings\Администратор\Рабочий стол\oop\Lab9\Lab9\MatrixDll\MatrixDll.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:01.04

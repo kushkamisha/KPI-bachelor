@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Max number</title>
+</head>
+<script>
+    var arr = [5, -1, 10, 3, 0, -3, -3, 8, -7, -13];
+    var max_numb = arr[0];
+    
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max_numb) {
+            max_numb = arr[i]
+        }
+    }
+    
+    alert('Max number in the array = ' + max_numb);
+</script>
+<body>
+</body>
+</html>
