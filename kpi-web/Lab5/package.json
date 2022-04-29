@@ -6,7 +6,7 @@
   "repository": "",
   "author": "Mykhailo Kushka",
   "dependencies": {
-    "async": "~0.2.8",
+    "async": "~2.6.4",
     "express": "~3.2.4",
     "pg": "^7.4.1",
     "pg-format": "^1.0.4",
